@@ -1,6 +1,6 @@
 {
   "name": "telegram-alarm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "작업 완료 요약과 권한 대기 알림을 [hostname][project] 프리픽스와 함께 텔레그램으로 전송",
   "author": {
     "name": "LaMelD",

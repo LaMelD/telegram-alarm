@@ -23,6 +23,7 @@ env -u TELEGRAM_BOT_TOKEN bash "$S" send x 2>/dev/null; check "send errors witho
 
 out=$(echo '{}' | bash "$S" session-start)
 check "session-start instruction has send command" "$(grep -c "telegram-alarm.sh send" <<<"$out")" 1
+check "session-start instruction forbids meta summary" "$(grep -c "메타 서술 금지" <<<"$out")" 1
 
 cd "$TMPDIR"; echo " my-proj " > .claude-project-id
 mkdir -p "$HOME/.claude"; echo "yss" > "$HOME/.claude/server-id"

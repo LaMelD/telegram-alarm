@@ -6,6 +6,7 @@ Claude Code 작업이 끝나면 Claude가 직접 쓴 결과 요약을 텔레그�
 
 ```
 [ak47][myapp] 빌드 스크립트 수정 완료. 테스트 12개 통과. 배포는 아직 안 함.
+[ak47][myapp] 공공재: 비경합성·비배제성을 갖는 재화. 무임승차 문제로 시장 공급이 부족해 정부가 제공. 예: 국방, 등대.
 [ak47][myapp] 🔔 Claude needs your permission to use Bash
 ```
 
@@ -21,6 +22,7 @@ Claude Code 작업이 끝나면 Claude가 직접 쓴 결과 요약을 텔레그�
 | 권한 승인 대기 | Notification (`permission_prompt`) | Claude 개입 없이 스크립트가 바로 알림 전송 |
 
 요약 본문은 Claude가 작성한다. 훅은 transcript를 자르지 않는다.
+메시지에는 "완료함" 같은 메타 서술이 아니라 답변·결과의 핵심 내용이 들어간다.
 `TELEGRAM_BOT_TOKEN`이 없으면 모든 훅이 조용히 통과한다.
 
 ## 프리픽스 규칙
