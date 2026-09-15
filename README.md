@@ -5,8 +5,8 @@ Claude Code 작업이 끝나면 Claude가 직접 쓴 결과 요약을 텔레그�
 모든 메시지 앞에 `[server][project]` 프리픽스가 붙어 어느 서버의 어느 레포에서 온 알림인지 알 수 있다.
 
 ```
-[yss][myapp] 빌드 스크립트 수정 완료. 테스트 12개 통과. 배포는 아직 안 함.
-[yss][myapp] 🔔 Claude needs your permission to use Bash
+[ak47][myapp] 빌드 스크립트 수정 완료. 테스트 12개 통과. 배포는 아직 안 함.
+[ak47][myapp] 🔔 Claude needs your permission to use Bash
 ```
 
 필요한 것은 bash와 curl뿐이다.
@@ -57,7 +57,7 @@ export TELEGRAM_CHAT_ID="987654321"
 ```
 
 또는 `~/.claude/settings.json`의 `env` 블록에 넣어도 된다.
-서버 별칭을 쓰려면 `echo yss > ~/.claude/server-id`.
+서버 별칭을 쓰려면 `echo ak47 > ~/.claude/server-id`.
 
 ### 3. 플러그인 설치
 
