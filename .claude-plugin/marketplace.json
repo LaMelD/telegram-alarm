@@ -10,7 +10,7 @@
       "name": "telegram-alarm",
       "source": "./",
       "description": "작업 완료 요약과 권한 대기 알림을 [hostname][project] 프리픽스와 함께 텔레그램으로 전송",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "category": "productivity"
     }
   ]

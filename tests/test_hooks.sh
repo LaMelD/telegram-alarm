@@ -3,7 +3,7 @@
 set -u
 S="$(cd "$(dirname "$0")/.." && pwd)/scripts/telegram-alarm.sh"
 export TMPDIR=$(mktemp -d) HOME=$(mktemp -d) TELEGRAM_BOT_TOKEN=x TELEGRAM_CHAT_ID=1 CLAUDE_CODE_SESSION_ID=test-session
-MARK="$TMPDIR/telegram-alarm/test-session"
+MARK="$TMPDIR/telegram-alarm-$(id -u)/test-session"
 fail=0
 check() { if [ "$2" = "$3" ]; then echo "ok   $1"; else echo "FAIL $1: expected [$3] got [$2]"; fail=1; fi; }
 

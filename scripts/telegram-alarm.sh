@@ -12,7 +12,8 @@
 # 프리픽스 덮어쓰기: ~/.claude/server-id (server), ./.claude-project-id (project)
 set -u
 SELF="$(cd "$(dirname "$0")" && pwd)/$(basename "$0")"
-MARK="${TMPDIR:-/tmp}/telegram-alarm/${CLAUDE_CODE_SESSION_ID:-default}"
+# 다중 사용자 호스트에서 /tmp/telegram-alarm 이 타 계정 소유면 쓰기 불가 → 사용자별 디렉토리
+MARK="${TMPDIR:-/tmp}/telegram-alarm-$(id -u)/${CLAUDE_CODE_SESSION_ID:-default}"
 CMD="${1:-}"
 case "$CMD" in
   send|session-start|prompt|stop|notify|prefix) ;;
